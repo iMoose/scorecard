@@ -17,6 +17,9 @@ const config = {
 			assets: 'build',
 			fallback: null
 		}),
+		paths: {
+			base: '/scorecard'
+		},
 		prerender: {
 			default: true,
 		}

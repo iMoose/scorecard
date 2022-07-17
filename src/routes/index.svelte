@@ -8,7 +8,7 @@
 	}
 </script>
 
-<h1 class="card-title text-center w-screen object-center block text-6xl p-4 mt-4">Scorecard</h1>
+<h1 class="card-title text-center w-screen object-center block text-6xl mt-4">Scorecard</h1>
 
 <div class="flex flex-col place-items-center pb-8" style="height: 90vh; justify-content: space-around;">
 	<div class="flex flex-col w-full lg:flex-row h-4/6 justify-center items-center">
