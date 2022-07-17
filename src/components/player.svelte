@@ -14,11 +14,11 @@
 	}
 </script>
 
-<div class="flex flex-col place-items-center justify-start items-center ">
+<div class="flex flex-col place-items-center justify-start items-center">
 	<input
 		bind:value={$name}
 		type="text"
-		class="rounded text-center bg-inherit border-none outline-none text-4xl placeholder:italic"
+		class="rounded text-center bg-inherit border-none outline-none text-4xl placeholder:italic p-4"
 		placeholder="Player {placeholder}"
 	/>
 
@@ -30,14 +30,21 @@
 		step="1"
 	/>
 
-	<div class="flex flex-row w-full place-content-evenly justify-center">
+	<div class="flex flex-row w-full place-content-evenly justify-center align-middle text-5xl p-4">
 		<button
-			class="btn-square text-green-800 bg-gray-700 rounded-lg shadow-md mx-4 active:border-gray-800 active:border-2"
-			on:click={inc}>+</button
+			class="btn-square btn-lg bg-gray-700 rounded-lg shadow-md mx-4 active:border-gray-800 active:border-2 flex items-center justify-center"
+			on:click={inc}
+			><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+				><path fill="#4ade80" d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z" /></svg
+			>
+		</button>
+		<button
+			class="btn-square btn-lg bg-gray-700 rounded-lg shadow-md mx-4 active:border-gray-800 active:border-2 flex items-center justify-center"
+			on:click={dec}
 		>
-		<button
-			class="btn-square text-red-800 bg-gray-700 rounded-lg shadow-md mx-4 active:border-gray-800 active:border-2"
-			on:click={dec}>-</button
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+				><path fill="#f87171" d="M0 10h24v4h-24z" /></svg
+			></button
 		>
 	</div>
 </div>
